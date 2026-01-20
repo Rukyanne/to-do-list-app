@@ -47,12 +47,6 @@ When you run the application, you'll see an interactive menu like this:
 Enter your choice (1-5): 
 ```
 
-**Example workflow:**
-1. Add tasks to your list
-2. View them with completion status
-3. Mark important tasks as complete
-4. Remove finished or unwanted tasks
-5. Exit knowing your data is saved
 
 ---
 
@@ -67,10 +61,6 @@ Before running this application, ensure you have:
 - A **text editor** or IDE (VS Code, PyCharm, etc.) - optional but recommended
 - **Git** for version control (optional)
 
-### System Requirements
-- **Operating System:** Windows, macOS, or Linux
-- **Disk Space:** < 1 MB
-- **Python Version:** 3.6 or higher
 
 ---
 
@@ -259,51 +249,6 @@ Total tasks: 2 | Completed: 1
 
 ---
 
-##  Code Structure
-
-### Project Files
-
-```
-to-do-list-app/
-│
-├── main.py           # Main application file with all logic
-├── tasks.txt         # Data file (auto-created on first run)
-├── .gitignore        # Git ignore rules
-└── README.md         # This documentation file
-```
-
-### Key Components in `main.py`
-
-```python
-# 1. Data Persistence Functions
-load_tasks()          # Reads tasks from tasks.txt
-save_tasks()          # Writes tasks to tasks.txt
-
-# 2. Core Features
-add_task()            # Adds new task to list
-view_tasks()          # Displays all tasks with status
-mark_complete()       # Changes task status to complete
-delete_task()         # Removes task from list
-
-# 3. User Interface
-display_menu()        # Shows menu options
-main()                # Main program loop
-```
-
-### How Data is Stored
-
-Tasks are stored in `tasks.txt` with a simple format:
-```
-[ ] Buy groceries
-[X] Complete homework
-[ ] Call dentist
-```
-
-- `[ ]` indicates an incomplete task
-- `[X]` indicates a completed task
-- Each line represents one task
-
----
 
 ##  SDLC Development History
 
